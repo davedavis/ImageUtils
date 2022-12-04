@@ -19,7 +19,9 @@ def draw_letter(letter):
               anchor="mm",
               fill="#CFCECE")
 
-    im.save(letter + ".png", "PNG")
+    image_path = "./generated_images"
+    # im.save(letter + ".png", "PNG")
+    im.save(f"{image_path}/{letter}.png", "PNG")
 
 
 def main():
